@@ -36,5 +36,5 @@ The architecture is message-based and uses RabbitMQ for decoupled communication 
 > The full setup instructions and usage steps can be found in the **existing project-level README.md** inside the repository.
 
 
-📎 License
+## 📎 License
 This project is part of a university prototype and is intended for educational use.
