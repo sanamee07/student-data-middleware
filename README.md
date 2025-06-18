@@ -14,9 +14,7 @@ Manual entry of student data into Peregos and WyseFlow is error-prone and time-c
 ## 🧭 Architecture
 
 The architecture is message-based and uses RabbitMQ for decoupled communication between systems:
-
-![Architecture Overview](assets/architecture.png)
-
+![image](https://github.com/user-attachments/assets/cc6a8607-6d8f-42d8-abba-fae8b6d05ed1)
 1. **HIS** publishes data to the `student_exchange`.
 2. A message with routing key `studentdata.his` is queued in `his_queue`.
 3. A consumer reads the message and republishes it to two queues:
